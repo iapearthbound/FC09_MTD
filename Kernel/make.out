@@ -1,0 +1,358 @@
+scripts/kconfig/conf -s arch/arm/Kconfig
+drivers/video/samsung_mipi/Kconfig:66:warning: choice value used outside its choice group
+  CHK     include/linux/version.h
+  CHK     include/generated/kernelversion.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' is up to date.
+  CALL    scripts/checksyscalls.sh
+  CC      init/main.o
+  CC      arch/arm/mm/init.o
+  CC      arch/arm/plat-s5p/bootmem.o
+  CC      arch/arm/mach-s5pv210/clock.o
+  CC      arch/arm/plat-samsung/clock.o
+In file included from /home/earthbound/1samurai.multi/Kernel/bml_mtd_otg/arch/arm/include/asm/mach-types.h:1,
+                 from arch/arm/mm/init.c:21:
+include/generated/mach-types.h:2953:1: warning: "MACH_TYPE_FORTE" redefined
+include/generated/mach-types.h:234:1: warning: this is the location of the previous definition
+arch/arm/mm/init.c: In function 'mem_init':
+arch/arm/mm/init.c:644: warning: format '%08lx' expects type 'long unsigned int', but argument 12 has type 'unsigned int'
+arch/arm/mach-s5pv210/clock.c:380: warning: initialization from incompatible pointer type
+  CC      arch/arm/plat-s5p/pm.o
+  CC      arch/arm/mach-s5pv210/pm.o
+  LD      arch/arm/mm/built-in.o
+  CC      arch/arm/plat-samsung/clock-clksrc.o
+  CC      arch/arm/plat-samsung/pm.o
+  CHK     include/generated/compile.h
+arch/arm/plat-s5p/pm.c:28: warning: 's3c_pm_check_resume_pin' defined but not used
+  LD      arch/arm/plat-s5p/built-in.o
+In file included from init/main.c:86:
+include/linux/kernel_sec_common.h:46:1: warning: "S3C_PA_WDT" redefined
+In file included from include/linux/kernel_sec_common.h:7,
+                 from init/main.c:86:
+arch/arm/mach-s5pv210/include/mach/map.h:215:1: warning: this is the location of the previous definition
+  CC      arch/arm/mach-s5pv210/power-domain.o
+  CC      init/do_mounts.o
+arch/arm/plat-samsung/pm.c: In function 's3c_pm_enter':
+arch/arm/plat-samsung/pm.c:315: warning: unused variable 'gpio'
+arch/arm/plat-samsung/pm.c: At top level:
+arch/arm/plat-samsung/pm.c:286: warning: 's3c_pm_show_resume_irqs' defined but not used
+  LD      arch/arm/plat-samsung/built-in.o
+  CC      arch/arm/mach-s5pv210/mach-victory.o
+  CC      arch/arm/mach-s5pv210/aries-rfkill.o
+In file included from /home/earthbound/1samurai.multi/Kernel/bml_mtd_otg/arch/arm/include/asm/mach-types.h:1,
+                 from arch/arm/mach-s5pv210/mach-victory.c:40:
+include/generated/mach-types.h:2953:1: warning: "MACH_TYPE_FORTE" redefined
+include/generated/mach-types.h:234:1: warning: this is the location of the previous definition
+arch/arm/mach-s5pv210/aries-rfkill.c: In function 'bluetooth_set_sleep':
+arch/arm/mach-s5pv210/aries-rfkill.c:216: warning: unused variable 'ret'
+In file included from arch/arm/mach-s5pv210/mach-victory.c:100:
+include/linux/kernel_sec_common.h:46:1: warning: "S3C_PA_WDT" redefined
+In file included from arch/arm/mach-s5pv210/mach-victory.c:42:
+arch/arm/mach-s5pv210/include/mach/map.h:215:1: warning: this is the location of the previous definition
+arch/arm/mach-s5pv210/mach-victory.c: In function 'ce147_power_en':
+arch/arm/mach-s5pv210/mach-victory.c:1876: warning: unused variable 'bd_level'
+arch/arm/mach-s5pv210/mach-victory.c: In function 'victory_power_off':
+arch/arm/mach-s5pv210/mach-victory.c:2834: warning: unused variable 'reset_mode'
+arch/arm/mach-s5pv210/mach-victory.c: At top level:
+arch/arm/mach-s5pv210/mach-victory.c:3425: warning: function declaration isn't a prototype
+arch/arm/mach-s5pv210/include/mach/system.h:19: warning: 'arch_idle' defined but not used
+arch/arm/mach-s5pv210/mach-victory.c:264: warning: 'uart_switch_init' defined but not used
+arch/arm/mach-s5pv210/mach-victory.c:350: warning: 'nt35580' defined but not used
+arch/arm/mach-s5pv210/mach-victory.c:1908: warning: 'smdkc110_cam1_power' defined but not used
+arch/arm/mach-s5pv210/mach-victory.c:2017: warning: 's5ka3dfx_vga_avdd' defined but not used
+arch/arm/mach-s5pv210/mach-victory.c:2467: warning: 'i2c_devs8' defined but not used
+arch/arm/mach-s5pv210/mach-victory.c:3452: warning: 'k3g_irq_init' defined but not used
+  CC      arch/arm/mach-s5pv210/aries-watchdog.o
+  CC      kernel/sched.o
+  CC      mm/filemap.o
+  CC      init/version.o
+  CC      arch/arm/mach-s5pv210/max8893_consumer.o
+arch/arm/mach-s5pv210/max8893_consumer.c: In function 'max8893_consumer_suspend':
+arch/arm/mach-s5pv210/max8893_consumer.c:70: warning: unused variable 'pmic_controling_list'
+arch/arm/mach-s5pv210/max8893_consumer.c:70: warning: unused variable 'i'
+arch/arm/mach-s5pv210/max8893_consumer.c: In function 'max8893_consumer_resume':
+arch/arm/mach-s5pv210/max8893_consumer.c:92: warning: unused variable 'saved_control'
+arch/arm/mach-s5pv210/max8893_consumer.c:92: warning: unused variable 'i'
+  LD      init/mounts.o
+  CC      arch/arm/mach-s5pv210/sec_switch.o
+In file included from kernel/sched.c:86:
+include/linux/kernel_sec_common.h:46:1: warning: "S3C_PA_WDT" redefined
+In file included from include/linux/kernel_sec_common.h:7,
+                 from kernel/sched.c:86:
+arch/arm/mach-s5pv210/include/mach/map.h:215:1: warning: this is the location of the previous definition
+  LD      init/built-in.o
+  CC      kernel/fork.o
+kernel/sched.c: In function 'sched_init':
+kernel/sched.c:7521: warning: ISO C90 forbids mixed declarations and code
+kernel/sched.c:7522: warning: initialization from incompatible pointer type
+In file included from /home/earthbound/1samurai.multi/Kernel/bml_mtd_otg/arch/arm/include/asm/mach-types.h:1,
+                 from arch/arm/mach-s5pv210/sec_switch.c:42:
+include/generated/mach-types.h:2953:1: warning: "MACH_TYPE_FORTE" redefined
+include/generated/mach-types.h:234:1: warning: this is the location of the previous definition
+arch/arm/mach-s5pv210/sec_switch.c: In function 'sec_switch_init_work':
+arch/arm/mach-s5pv210/sec_switch.c:226: warning: unused variable 'askon_sel'
+arch/arm/mach-s5pv210/sec_switch.c:226: warning: unused variable 'vtp_sel'
+arch/arm/mach-s5pv210/sec_switch.c:226: warning: unused variable 'mtp_sel'
+arch/arm/mach-s5pv210/sec_switch.c:226: warning: unused variable 'ums_sel'
+arch/arm/mach-s5pv210/sec_switch.c:226: warning: unused variable 'samsung_kies_sel'
+  CC      fs/exec.o
+  CC      arch/arm/mach-s5pv210/cpu-freq.o
+arch/arm/mach-s5pv210/cpu-freq.c: In function 's5pv210_cpufreq_target':
+arch/arm/mach-s5pv210/cpu-freq.c:598: warning: unused variable 'old_index'
+  CC      mm/oom_kill.o
+  LD      arch/arm/mach-s5pv210/built-in.o
+  CC      fs/dcache.o
+  CC      mm/page_alloc.o
+  CC      mm/page-writeback.o
+  CC      ipc/shm.o
+  CC      kernel/exit.o
+  CC      fs/inode.o
+  LD      ipc/built-in.o
+  CC      mm/swap.o
+  CC      kernel/sysctl.o
+  CC      security/commoncap.o
+  CC      mm/truncate.o
+  CC      fs/splice.o
+  CC      mm/vmscan.o
+  CC      mm/shmem.o
+  LD      security/built-in.o
+  CC      kernel/timer.o
+  CC      fs/buffer.o
+  CC      block/elevator.o
+  CC      kernel/sys.o
+  CC      drivers/block/loop.o
+  CC      mm/fremap.o
+  CC      block/blk-core.o
+  CC      mm/highmem.o
+  CC      kernel/kmod.o
+  CC      mm/madvise.o
+  LD      drivers/block/built-in.o
+  CC      mm/memory.o
+  CC      kernel/kthread.o
+  CC      fs/bio.o
+  CC      drivers/char/sysrq.o
+  CC      block/cfq-iosched.o
+  CC      kernel/freezer.o
+  CC      drivers/char/apm-emulation.o
+  CC      kernel/power/main.o
+  CC      mm/mincore.o
+  CC      fs/ext2/dir.o
+  CC      kernel/power/console.o
+  LD      drivers/char/built-in.o
+  CC      mm/mlock.o
+  CC      block/bfq-iosched.o
+  CC      kernel/power/process.o
+  CC      drivers/cpufreq/cpufreq.o
+  LD      fs/ext2/ext2.o
+  LD      fs/ext2/built-in.o
+  CC      mm/mmap.o
+drivers/cpufreq/cpufreq.c:806: warning: initialization from incompatible pointer type
+  CC      kernel/power/suspend.o
+  CC      fs/ext4/balloc.o
+  CC      drivers/cpufreq/cpufreq_stats.o
+  CC      kernel/power/nvs.o
+  CC      drivers/cpufreq/cpufreq_performance.o
+  CC      kernel/power/wakelock.o
+  CC      drivers/cpufreq/cpufreq_powersave.o
+  CC      mm/mprotect.o
+  CC      fs/ext4/super.o
+  CC      drivers/cpufreq/cpufreq_userspace.o
+  LD      block/built-in.o
+  CC      mm/mremap.o
+  CC      drivers/cpufreq/cpufreq_ondemand.o
+  CC      kernel/power/userwakelock.o
+  CC      mm/rmap.o
+  CC      drivers/cpufreq/cpufreq_conservative.o
+  CC      kernel/power/earlysuspend.o
+  CC      kernel/power/fbearlysuspend.o
+  CC      drivers/cpufreq/cpufreq_interactive.o
+  CC      mm/ashmem.o
+  CC      drivers/gpu/pvr/module.o
+  LD      kernel/power/built-in.o
+  CC      kernel/module.o
+  CC      drivers/cpufreq/cpufreq_interactivex.o
+  CC      mm/slub.o
+  CC      fs/ext4/mballoc.o
+  CC      drivers/cpufreq/cpufreq_smartass.o
+  LD      drivers/gpu/pvr/s3c_lcd.o
+  LD      drivers/gpu/pvr/s3c_bc.o
+  LD      drivers/gpu/pvr/pvrsrvkm.o
+  CC      drivers/cpufreq/cpufreq_smartass2.o
+  LD      drivers/gpu/pvr/built-in.o
+  LD      drivers/gpu/built-in.o
+  CC      kernel/kexec.o
+  LD      mm/built-in.o
+  CC      drivers/cpufreq/cpufreq_savagedzen.o
+  CC      drivers/i2c/busses/i2c-s3c2410.o
+  CC      drivers/cpufreq/cpufreq_intellidemand.o
+  CC      kernel/cgroup.o
+  LD      drivers/i2c/busses/built-in.o
+  LD      drivers/i2c/built-in.o
+  CC      fs/ext4/block_validity.o
+  CC      drivers/cpufreq/cpufreq_lagfree.o
+  CC      drivers/input/keyboard/s3c-keypad.o
+  LD      fs/ext4/ext4.o
+  LD      fs/ext4/built-in.o
+  CC      drivers/cpufreq/cpufreq_samurai.o
+  CC      drivers/cpufreq/cpufreq_smoothass.o
+In file included from drivers/input/keyboard/s3c-keypad.c:42:
+include/linux/kernel_sec_common.h:46:1: warning: "S3C_PA_WDT" redefined
+In file included from arch/arm/mach-s5pv210/include/mach/regs-gpio.h:16,
+                 from drivers/input/keyboard/s3c-keypad.c:30:
+arch/arm/mach-s5pv210/include/mach/map.h:215:1: warning: this is the location of the previous definition
+drivers/input/keyboard/s3c-keypad.c: In function 'keypad_scan':
+drivers/input/keyboard/s3c-keypad.c:199: warning: suggest parentheses around '+' inside '<<'
+drivers/input/keyboard/s3c-keypad.c:190: warning: unused variable 'gpio'
+drivers/input/keyboard/s3c-keypad.c: In function 'keypad_timer_handler':
+drivers/input/keyboard/s3c-keypad.c:230: warning: type defaults to 'int' in declaration of 'some_keys_pressed'
+drivers/input/keyboard/s3c-keypad.c: In function 'key_led_control':
+drivers/input/keyboard/s3c-keypad.c:476: warning: format '%d' expects type 'int *', but argument 3 has type 'unsigned char *'
+drivers/input/keyboard/s3c-keypad.c: In function 's3c_keypad_probe':
+drivers/input/keyboard/s3c-keypad.c:572: warning: unused variable 'gpio'
+drivers/input/keyboard/s3c-keypad.c: In function 's3c_keypad_resume':
+drivers/input/keyboard/s3c-keypad.c:818: warning: unused variable 'key_temp_data'
+drivers/input/keyboard/s3c-keypad.c:817: warning: unused variable 'iDev'
+  CC      fs/proc/task_mmu.o
+  LD      drivers/input/keyboard/built-in.o
+  CC      drivers/cpufreq/cpufreq_wheatley.o
+  CC      drivers/cpufreq/cpufreq_scary.o
+  LD      drivers/input/built-in.o
+  CC      fs/proc/base.o
+  CC      kernel/cgroup_freezer.o
+  CC      drivers/cpufreq/freq_table.o
+  CC      fs/proc/array.o
+  LD      drivers/cpufreq/built-in.o
+  CC      kernel/res_counter.o
+  CC      drivers/mfd/max8998.o
+  LD      kernel/built-in.o
+drivers/mfd/max8998.c: In function 'max8998_i2c_probe':
+drivers/mfd/max8998.c:124: warning: unused variable 'pdata'
+  LD      drivers/mfd/built-in.o
+  CC      fs/proc/meminfo.o
+  CC      fs/proc/page.o
+  CC      drivers/mmc/core/host.o
+  CC      drivers/media/video/samsung/mfc50/mfc.o
+  LD      fs/proc/proc.o
+  LD      drivers/mmc/core/mmc_core.o
+  LD      drivers/mmc/core/built-in.o
+  LD      drivers/mmc/built-in.o
+  LD      fs/proc/built-in.o
+  LD      drivers/media/video/samsung/mfc50/built-in.o
+  LD      drivers/media/video/samsung/built-in.o
+  LD      drivers/media/video/built-in.o
+  LD      drivers/media/built-in.o
+  CC      fs/sysv/dir.o
+  CC [M]  drivers/net/wireless/bcm4329/victory/src/dhd/sys/dhd_linux.o
+  LD      fs/sysv/sysv.o
+  LD      fs/sysv/built-in.o
+  CC      net/socket.o
+  LD      fs/built-in.o
+  CC      drivers/power/s5pc110_battery.o
+In file included from /home/earthbound/1samurai.multi/Kernel/bml_mtd_otg/arch/arm/include/asm/mach-types.h:1,
+                 from drivers/power/s5pc110_battery.c:16:
+include/generated/mach-types.h:2953:1: warning: "MACH_TYPE_FORTE" redefined
+include/generated/mach-types.h:234:1: warning: this is the location of the previous definition
+drivers/power/s5pc110_battery.c: In function 's3c_bat_work':
+drivers/power/s5pc110_battery.c:1172: warning: unused variable 'con'
+drivers/power/s5pc110_battery.c:1171: warning: unused variable 'cnt'
+drivers/power/s5pc110_battery.c: In function 'max8998_int_work_func':
+drivers/power/s5pc110_battery.c:1548: warning: unused variable 'data2'
+drivers/power/s5pc110_battery.c: In function 's3c_bat_use_wimax':
+drivers/power/s5pc110_battery.c:1269: warning: control reaches end of non-void function
+  LD      drivers/power/built-in.o
+  CC [M]  drivers/net/wireless/bcm4329/victory/src/bcmsdio/sys/bcmsdh_sdmmc.o
+  CC      drivers/regulator/core.o
+  CC      net/core/sock.o
+  LD [M]  drivers/net/wireless/bcm4329/victory/dhd.o
+  CC      drivers/regulator/max8998.o
+  CC      drivers/regulator/max8893.o
+  LD      net/core/built-in.o
+drivers/regulator/max8893.c: In function 'max8893_ldo_get_voltage':
+drivers/regulator/max8893.c:255: warning: unused variable 'mask'
+drivers/regulator/max8893.c:255: warning: unused variable 'shift'
+drivers/regulator/max8893.c: In function 'max8893_ldo_set_voltage':
+drivers/regulator/max8893.c:286: warning: unused variable 'mask'
+drivers/regulator/max8893.c:286: warning: unused variable 'shift'
+drivers/regulator/max8893.c: In function 'max8893_ldo_set_voltage_direct':
+drivers/regulator/max8893.c:491: warning: unused variable 'mask'
+drivers/regulator/max8893.c:491: warning: unused variable 'shift'
+drivers/regulator/max8893.c: In function 'max8893_pmic_probe':
+drivers/regulator/max8893.c:610: warning: unused variable 'gpio_value'
+drivers/regulator/max8893.c: In function 'max8893_ldo_get_voltage':
+drivers/regulator/max8893.c:273: warning: 'reg' may be used uninitialized in this function
+drivers/regulator/max8893.c: In function 'max8893_ldo_set_voltage':
+drivers/regulator/max8893.c:330: warning: 'reg' may be used uninitialized in this function
+  LD      drivers/regulator/built-in.o
+  CC      drivers/serial/samsung.o
+  CC      net/ipv4/tcp.o
+  CC      drivers/usb/gadget/s3c_udc_otg.o
+In file included from drivers/usb/gadget/s3c_udc_otg.c:216:
+drivers/usb/gadget/s3c_udc_otg_xfer_dma.c: In function 'process_ep_out_intr':
+drivers/usb/gadget/s3c_udc_otg_xfer_dma.c:397: warning: ISO C90 forbids mixed declarations and code
+  LD      drivers/serial/built-in.o
+  LD      drivers/usb/gadget/built-in.o
+  CC      net/activity_stats.o
+  CC      drivers/video/samsung/s3cfb.o
+  CC      net/ipv4/udp.o
+drivers/video/samsung/s3cfb.c: In function 's3cfb_map_video_memory':
+drivers/video/samsung/s3cfb.c:318: warning: assignment makes pointer from integer without a cast
+drivers/video/samsung/s3cfb.c: In function 's3cfb_sysfs_show_lcd_power':
+drivers/video/samsung/s3cfb.c:1166: warning: 'return' with no value, in function returning non-void
+drivers/video/samsung/s3cfb.c: In function 's3cfb_probe':
+drivers/video/samsung/s3cfb.c:1317: warning: too many arguments for format
+drivers/video/samsung/s3cfb.c: At top level:
+drivers/video/samsung/s3cfb.c:323: warning: 's3cfb_map_default_video_memory' defined but not used
+  LD      net/ipv4/built-in.o
+  LD      net/built-in.o
+  LD      drivers/video/samsung/built-in.o
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+WARNING: modpost: Found 11 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  OBJCOPY arch/arm/boot/Image
+  Building modules, stage 2.
+  Kernel: arch/arm/boot/Image is ready
+  GZIP    arch/arm/boot/compressed/piggy.gzip
+  MODPOST 9 modules
+  SHIPPED arch/arm/boot/compressed/lib1funcs.S
+  AS      arch/arm/boot/compressed/lib1funcs.o
+  AS      arch/arm/boot/compressed/piggy.gzip.o
+  CC      crypto/ansi_cprng.mod.o
+  CC      drivers/misc/vibetonz/vibrator.mod.o
+  CC      drivers/net/wireless/bcm4329/victory/dhd.mod.o
+  CC      drivers/net/wireless/bcm4329/victory/src/wl/sys/hotspot_event_monitoring.mod.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
+  CC      drivers/net/wireless/wimax/cmc7xx_sdio.mod.o
+  CC      drivers/net/wireless/wimaxgpio/wimax_gpio.mod.o
+  CC      drivers/onedram/dpram/dpram.mod.o
+  CC      drivers/onedram/dpram_recovery/dpram_recovery.mod.o
+  CC      drivers/scsi/scsi_wait_scan.mod.o
+  LD [M]  crypto/ansi_cprng.ko
+  LD [M]  drivers/misc/vibetonz/vibrator.ko
+  LD [M]  drivers/net/wireless/bcm4329/victory/dhd.ko
+  LD [M]  drivers/net/wireless/bcm4329/victory/src/wl/sys/hotspot_event_monitoring.ko
+  LD [M]  drivers/net/wireless/wimax/cmc7xx_sdio.ko
+  LD [M]  drivers/net/wireless/wimaxgpio/wimax_gpio.ko
+  LD [M]  drivers/onedram/dpram/dpram.ko
+  LD [M]  drivers/onedram/dpram_recovery/dpram_recovery.ko
+  LD [M]  drivers/scsi/scsi_wait_scan.ko
